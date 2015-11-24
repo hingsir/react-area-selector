@@ -1,2 +1,3 @@
 # react-area-selector
-省市县三级联动
+ReactJs 省市县三级联动
+[演示地址](http://hingsir.github.io/react-area-selector)
