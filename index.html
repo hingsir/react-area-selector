@@ -32,6 +32,11 @@
             county: ''
           })
         },
+        selectCounty: function(evt){
+          this.setState({
+            county: evt.target.value
+          })
+        },
         render: function() {
           var data = this.props.data,
               options = $.extend({
@@ -72,7 +77,7 @@
             <option value="">{options.defaultText[1]}</option>
             {citys}
           </select>
-          <select class="J_area_county" name={options.defaultName[2]} value={this.state.county}>
+          <select class="J_area_county" name={options.defaultName[2]} value={this.state.county} onChange={this.selectCounty}>
             <option value="">{options.defaultText[2]}</option>
             {countys}
           </select>
@@ -91,7 +96,6 @@
         document.getElementById('container')
       );
 
-      
     </script>
   </body>
 </html>
